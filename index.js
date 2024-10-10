@@ -1,6 +1,8 @@
 import {checkbox, input, select, Separator, confirm} from "@inquirer/prompts"
 import {get_executor, create_project, tailwind, module_registry} from "./scripts.js";
 import command_exists from "command-exists"
+import ora from "ora";
+import chalk from "chalk";
 
 let package_managers = [
     {
@@ -130,10 +132,6 @@ const exe = get_executor(pm)
 
 await create_project(project_name, exe, pm, git)
 
-modules.forEach(async (mod) => {
-
-})
-
 for (let i = 0; i < modules.length; i++) {
     const mod = modules[i]
     const func = module_registry[mod]
@@ -143,3 +141,7 @@ for (let i = 0; i < modules.length; i++) {
         console.error("Module not found!")
     }
 }
+
+
+console.log(`Your project ${chalk.bold.bgCyan(project_name)} has been created successfully!`)
+console.log(`Start working with it by running ${chalk.bold.cyan(`cd ./${project_name}`)}!`)
