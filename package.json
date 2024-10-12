@@ -19,6 +19,7 @@
   ],
   "author": "ogjons",
   "license": "ISC",
+  "repository": "github.com/OG-Jons/init-nuxt-app",
   "dependencies": {
     "@inquirer/prompts": "^7.0.0",
     "chalk": "^5.3.0",
