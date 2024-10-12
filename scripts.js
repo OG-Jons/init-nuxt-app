@@ -13,7 +13,7 @@ export const get_executor = (pm) => {
         case "pnpm":
             return "pnpm dlx"
         case "yarn":
-            return "yarn dlx"
+            return "npx"
         case "bun":
             return "bun x"
     }
@@ -71,7 +71,7 @@ export const vueuse = async (_, pm) => {
 
     try {
         // Install the packages
-        await execPromise(`${pm} install @vueuse/nuxt @vueuse/core`);
+        await execPromise(`${pm} ${pm === "yarn" ? "add" : "install"} @vueuse/nuxt @vueuse/core`);
 
         // Load the existing nuxtConfig
         const nuxtConfigPath = './nuxt.config.ts'; // Adjust path if needed
@@ -105,7 +105,7 @@ export const test = async (_, pm) => {
 
     try {
         // Install the required packages
-        await execPromise(`${pm} install ${pm === "yarn" || pm === "bun" ? '--dev' : '--save-dev'} @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core`);
+        await execPromise(`${pm} ${pm === "yarn" ? "add" : "install"} ${pm === "yarn" || pm === "bun" ? '--dev' : '--save-dev'} @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core`);
 
         // Load the existing nuxtConfig
         const nuxtConfigPath = './nuxt.config.ts'; // Adjust path if needed
@@ -162,7 +162,7 @@ export const animate = async (_, pm) => {
 
     try {
         // Install the packages
-        await execPromise(`${pm} install @formkit/auto-animate`);
+        await execPromise(`${pm} ${pm === "yarn" ? "add" : "install"} @formkit/auto-animate`);
 
         // Load the existing nuxtConfig
         const nuxtConfigPath = './nuxt.config.ts'; // Adjust path if needed

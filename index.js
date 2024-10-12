@@ -153,4 +153,4 @@ for (let i = 0; i < modules.length; i++) {
 
 
 console.log(`Your project ${chalk.bold.bgCyan(project_name)} has been created successfully!`)
-console.log(`Start working with it by running ${chalk.bold.cyan(`cd ./${project_name}`)}!`)
+console.log(`Start working with it by running ${chalk.bold.cyan(`cd ./${project_name} && ${pm} run dev`)}!`)

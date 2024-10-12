@@ -13,13 +13,15 @@ This script automates the process of creating a new Nuxt application with select
 
 ## Usage
 ```bash
-npx init-nuxt-app
+npx init-nuxt-app@latest
 ```
 or, alternatively:
 ```bash
 npm install -g init-nuxt-app
 init-nuxt-app
 ```
+
+_If you are using yarn and facing issues, try to run `corepack enable` before._
 
 ## Develop
 1. Install Node.js
