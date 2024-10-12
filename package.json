@@ -17,7 +17,7 @@
     "interactive",
     "project-creation"
   ],
-  "author": "OG-Jons",
+  "author": "ogjons",
   "license": "ISC",
   "dependencies": {
     "@inquirer/prompts": "^7.0.0",
