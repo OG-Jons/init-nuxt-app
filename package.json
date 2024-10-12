@@ -1,6 +1,6 @@
 {
   "name": "init-nuxt-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Interactive tool to create nuxt apps.",
   "main": "index.js",
   "type": "module",
