@@ -13,6 +13,11 @@ This script automates the process of creating a new Nuxt application with select
 
 ## Usage
 ```bash
+npx init-nuxt-app
+```
+or, alternatively:
+```bash
+npm install -g init-nuxt-app
 init-nuxt-app
 ```
 
