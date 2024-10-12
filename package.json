@@ -1,11 +1,11 @@
 {
-  "name": "create-nuxt-app",
+  "name": "init-nuxt-app",
   "version": "1.0.0",
   "description": "Interactive tool to create nuxt apps.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-nuxt-app": "./index.js"
+    "init-nuxt-app": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
