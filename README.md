@@ -12,6 +12,11 @@ This script automates the process of creating a new Nuxt application with select
 - **Progress Indication**: Uses visual feedback (via ora) to show the progress of project setup and module installation.
 
 ## Usage
+```bash
+init-nuxt-app
+```
+
+## Develop
 1. Install Node.js
 2. Install dependencies
 ```bash

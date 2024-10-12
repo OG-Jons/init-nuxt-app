@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {exec} from "child_process"
 import ora from "ora";
 import {promisify} from 'util';

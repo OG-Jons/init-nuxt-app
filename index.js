@@ -1,8 +1,17 @@
+#!/usr/bin/env node
+
 import {checkbox, input, select, Separator, confirm} from "@inquirer/prompts"
 import {get_executor, create_project, tailwind, module_registry} from "./scripts.js";
 import command_exists from "command-exists"
-import ora from "ora";
 import chalk from "chalk";
+
+let args = process.argv;
+
+if (args.length > 2) {
+    console.log(chalk.red(`Arguments aren't supported`))
+    process.exit(1)
+}
+
 
 let package_managers = [
     {
